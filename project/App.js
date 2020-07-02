@@ -7,6 +7,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 //Drawer navigation
 
+//HomeScreen
 function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -19,7 +20,9 @@ function HomeScreen({ navigation }) {
     </View>
   );
 }
+//HomeScreen
 
+//Personal_Data
 function Personal_Data_Screen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -29,7 +32,19 @@ function Personal_Data_Screen({ navigation }) {
     </View>
   );
 }
+//Personal_Data
 
+//Suggest_Page
+
+//Suggest_Page
+
+//Cookbook
+
+//Cookbook
+
+//Share
+
+//Share
 const Drawer = createDrawerNavigator();
 
 export default function App() {
@@ -38,6 +53,9 @@ export default function App() {
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={HomeScreen} />
         <Drawer.Screen name="Personal_Data" component={Personal_Data_Screen} />
+		<Drawer.Screen name="Suggest" component={Suggest} />
+		<Drawer.Screen name="Cookbook" component={Cookbook} />
+		<Drawer.Screen name="Share" component={Share} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
