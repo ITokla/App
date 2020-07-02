@@ -10,13 +10,8 @@ import { NavigationContainer } from '@react-navigation/native';
 //HomeScreen
 function HomeScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-		 //testing
-      <Button
-        onPress={() => navigation.navigate('Personal_Data')}
-        title="Go to Personal_Data"
-      />
-		//testing
+    <View style={ styles.container }>
+
     </View>
   );
 }
@@ -25,10 +20,8 @@ function HomeScreen({ navigation }) {
 //Personal_Data
 function Personal_Data_Screen({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-		//testing
-      <Button onPress={() => navigation.goBack()} title="Go back home" />
-		//testing
+    <View style={ styles.container }>
+
     </View>
   );
 }
@@ -36,13 +29,38 @@ function Personal_Data_Screen({ navigation }) {
 
 //Suggest_Page
 
+function Suggest({ navigation }) {
+  return (
+    <View style={ styles.container }>
+
+    </View>
+  );
+}
+
 //Suggest_Page
 
 //Cookbook
 
+function Cookbook({ navigation }) {
+  return (
+    <View style={ styles.container }>
+
+    </View>
+  );
+}
+
 //Cookbook
 
 //Share
+
+function Share({ navigation }) {
+  return (
+    <View style={ styles.container }>
+
+    </View>
+  );
+}
+
 
 //Share
 const Drawer = createDrawerNavigator();
@@ -63,9 +81,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+	flex: 1, 
+	alignItems: 'center', 
+	justifyContent: 'center'
   },
 });
